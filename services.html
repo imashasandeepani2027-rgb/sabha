@@ -12,7 +12,44 @@
             background-color: #f4f4f4; 
             text-align: center; 
         }
-        header { background-color: #800000; color: white; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        
+        /* =============== Language Bar CSS =============== */
+        .lang-bar {
+            background-color: #f8f9fa;
+            padding: 8px 20px;
+            text-align: right;
+            border-bottom: 1px solid #ddd;
+            font-size: 0.9em;
+        }
+        .lang-bar a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .lang-bar a:hover {
+            color: #800000;
+        }
+        .lang-bar .active-lang {
+            color: #800000;
+            border-bottom: 2px solid #800000;
+            padding-bottom: 2px;
+        }
+        /* ================================================ */
+        
+        header { 
+            background-color: #800000; 
+            color: white; 
+            padding: 20px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .header-logo { height: 90px; width: auto; }
+        .header-text { text-align: left; }
         header h1 { margin: 0; font-size: 2.2em; }
         header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; }
         
@@ -53,9 +90,18 @@
 </head>
 <body>
 
+    <div class="lang-bar">
+        <a href="services.html" class="active-lang">සිංහල</a>
+        <a href="services-en.html">English</a>
+        <a href="services-ta.html">தமிழ்</a>
+    </div>
+
     <header>
-        <h1>බිංගිරිය ප්‍රාදේශීය සභාව</h1>
-        <p>මහජන සේවයේ උදාර පියවර</p>
+        <img src="logo.jpg" alt="Bingiriya Pradeshiya Sabha Logo" class="header-logo">
+        <div class="header-text">
+            <h1>බිංගිරිය ප්‍රාදේශීය සභාව</h1>
+            <p>මහජන සේවයේ උදාර පියවර</p>
+        </div>
     </header>
 
     <nav>
