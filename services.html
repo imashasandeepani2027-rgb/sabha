@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>බිංගිරිය ප්‍රාදේශීය සභාව - සේවාවන්</title>
+    <style>
+        body { 
+            font-family: 'Iskoola Pota', 'Nirmala UI', 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+            text-align: center; 
+        }
+        header { background-color: #800000; color: white; padding: 25px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        header h1 { margin: 0; font-size: 2.2em; }
+        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; }
+        
+        nav { background-color: #333; padding: 12px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 1.05em; transition: color 0.3s; }
+        nav a:hover { color: #ffcc00; }
+        
+        .container { max-width: 900px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: left; }
+        h2 { color: #800000; text-align: center; margin-top: 0; border-bottom: 2px solid #800000; padding-bottom: 10px; }
+        
+        p.intro { font-size: 1.1em; color: #555; line-height: 1.6; text-align: justify; }
+        
+        .service-category { margin: 25px 0; }
+        .category-title { font-size: 1.3em; color: #800000; font-weight: bold; margin-bottom: 15px; background-color: #fff5f5; padding: 8px; border-left: 4px solid #800000; }
+        
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .service-card { background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
+        .service-card:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .service-card h4 { margin-top: 0; color: #333; font-size: 1.15em; margin-bottom: 10px; }
+        .service-card p { font-size: 0.95em; color: #666; line-height: 1.6; margin-bottom: 15px; text-align: justify; }
+        
+        .btn-download { 
+            display: inline-block; 
+            background-color: #800000; 
+            color: white; 
+            text-decoration: none; 
+            padding: 8px 15px; 
+            font-size: 0.95em; 
+            font-weight: bold; 
+            border-radius: 4px; 
+            text-align: center;
+            transition: background 0.3s; 
+        }
+        .btn-download:hover { background-color: #333; }
+        
+        footer { background-color: #333; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>බිංගිරිය ප්‍රාදේශීය සභාව</h1>
+        <p>මහජන සේවයේ උදාර පියවර</p>
+    </header>
+
+    <nav>
+        <a href="index.html">මුල් පිටුව</a>
+        <a href="about.html">අපි ගැන</a>
+        <a href="services.html">සේවාවන්</a>
+        <a href="complaints.html">පැමිණිලි</a>
+    </nav>
+
+    <div class="container">
+        <h2>මහජන සේවාවන් සහ අයදුම්පත් ලබා ගැනීම</h2>
+        
+        <p class="intro">බිංගිරිය ප්‍රාදේශීය බල ප්‍රදේශයේ පුරවැසියන් මෙන්ම සිසුන් වෙනුවෙන් සභාව මඟින් සපයනු ලබන ප්‍රධාන සේවාවන් සහ ඒ සඳහා අවශ්‍ය වන නිල අයදුම්පත් පහතින් ලබාගත හැක. බොත්තම ක්ලික් කිරීමෙන් පෝරමය අලුත් ටැබ් එකකින් විවෘත කර PDF එකක් ලෙස පරිගණකයට හෝ ජංගම දුරකථනයට බාගත (Download) කරගත හැක.</p>
+        
+        <div class="service-category">
+            <div class="category-title">1. කර්මාන්ත හා සැලසුම් අංශය</div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div>
+                        <h4>ගොඩනැගිලි සැලසුම් අනුමත කිරීම</h4>
+                        <p>බල ප්‍රදේශය තුළ නේවාසික හෝ ව්‍යාපාරික ගොඩනැගිලි ඉදිකිරීමට පෙර සැලසුම් අනුමත කරවා ගැනීම සඳහා වන අයදුම්පත.</p>
+                    </div>
+                    <a href="form-building.html" target="_blank" class="btn-download">අයදුම්පත බාගත කරන්න</a>
+                </div>
+                <div class="service-card">
+                    <div>
+                        <h4>ව්‍යාපාර හා වෙළඳ බලපත්‍ර</h4>
+                        <p>නව ව්‍යාපාරයක් හෝ කර්මාන්තයක් ආරම්භ කිරීම සහ වාර්ෂිකව වෙළඳ බලපත්‍ර අලුත් කරවා ගැනීම සඳහා වන අයදුම්පත.</p>
+                    </div>
+                    <a href="form-business.html" target="_blank" class="btn-download">අයදුම්පත බාගත කරන්න</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-category">
+            <div class="category-title">2. පරිපාලන, උපයෝගිතා හා පුහුණු සේවාවන්</div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div>
+                        <h4>ශ්‍රවණාගාර සහ ක්‍රීඩාංගණ වෙන් කිරීම</h4>
+                        <p>බිංගිරිය ප්‍රාදේශීය සභා නව ශ්‍රවණාගාරය හෝ සභාව සතු ක්‍රීඩාංගණ පොදු/පෞද්ගලික උත්සව සඳහා වෙන් කරවා ගැනීමේ පත්‍රිකාව.</p>
+                    </div>
+                    <a href="form-hall.html" target="_blank" class="btn-download">අයදුම්පත බාගත කරන්න</a>
+                </div>
+                <div class="service-card">
+                    <div>
+                        <h4>සීමාවාසී පුහුණු අවස්ථා (Internships)</h4>
+                        <p>විශ්වවිද්‍යාල සහ උසස් අධ්‍යාපන ආයතනවල සිසුන් සඳහා සභාවේ තොරතුරු තාක්ෂණ (IT), පරිපාලන හෝ ගිණුම් අංශවල කාර්මික පුහුණුව සඳහා අයදුම් කිරීමේ පෝරමය.</p>
+                    </div>
+                    <a href="form-internship.html" target="_blank" class="btn-download">පුහුණු අයදුම්පත බාගත කරන්න</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 බිංගිරිය ප්‍රාදේශීය සභාව. සියලුම හිමිකම් ඇවිරිණි.</p>
+    </footer>
+
+</body>
+</html>
