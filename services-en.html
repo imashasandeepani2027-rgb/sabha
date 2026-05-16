@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Bingiriya Pradeshiya Sabha - Services</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+            text-align: center; 
+        }
+        
+        /* =============== Language Bar CSS =============== */
+        .lang-bar {
+            background-color: #f8f9fa;
+            padding: 8px 20px;
+            text-align: right;
+            border-bottom: 1px solid #ddd;
+            font-size: 0.9em;
+        }
+        .lang-bar a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .lang-bar a:hover {
+            color: #800000;
+        }
+        .lang-bar .active-lang {
+            color: #800000;
+            border-bottom: 2px solid #800000;
+            padding-bottom: 2px;
+        }
+        /* ================================================ */
+        
+        header { 
+            background-color: #800000; 
+            color: white; 
+            padding: 20px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .header-logo { height: 90px; width: auto; }
+        .header-text { text-align: left; }
+        header h1 { margin: 0; font-size: 2.2em; }
+        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; }
+        
+        nav { background-color: #333; padding: 12px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 1.05em; transition: color 0.3s; }
+        nav a:hover { color: #ffcc00; }
+        
+        .container { max-width: 900px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: left; }
+        h2 { color: #800000; text-align: center; margin-top: 0; border-bottom: 2px solid #800000; padding-bottom: 10px; }
+        
+        p.intro { font-size: 1.1em; color: #555; line-height: 1.6; text-align: justify; }
+        
+        .service-category { margin: 25px 0; }
+        .category-title { font-size: 1.3em; color: #800000; font-weight: bold; margin-bottom: 15px; background-color: #fff5f5; padding: 8px; border-left: 4px solid #800000; }
+        
+        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .service-card { background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
+        .service-card:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        .service-card h4 { margin-top: 0; color: #333; font-size: 1.15em; margin-bottom: 10px; }
+        .service-card p { font-size: 0.95em; color: #666; line-height: 1.6; margin-bottom: 15px; text-align: justify; }
+        
+        .btn-download { 
+            display: inline-block; 
+            background-color: #800000; 
+            color: white; 
+            text-decoration: none; 
+            padding: 8px 15px; 
+            font-size: 0.95em; 
+            font-weight: bold; 
+            border-radius: 4px; 
+            text-align: center;
+            transition: background 0.3s; 
+        }
+        .btn-download:hover { background-color: #333; }
+        
+        footer { background-color: #333; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
+    </style>
+</head>
+<body>
+
+    <div class="lang-bar">
+        <a href="services.html">සිංහල</a>
+        <a href="services-en.html" class="active-lang">English</a>
+        <a href="services-ta.html">தமிழ்</a>
+    </div>
+
+    <header>
+        <img src="logo.jpg" alt="Bingiriya Pradeshiya Sabha Logo" class="header-logo">
+        <div class="header-text">
+            <h1>Bingiriya Pradeshiya Sabha</h1>
+            <p>A Noble Step in Public Service</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index-en.html">Home</a>
+        <a href="about-en.html">About Us</a>
+        <a href="services-en.html">Services</a>
+        <a href="complaints-en.html">Complaints</a>
+    </nav>
+
+    <div class="container">
+        <h2>Public Services and Application Downloads</h2>
+        
+        <p class="intro">The primary services provided by the Sabha for citizens as well as students within the Bingiriya local area, along with the official application forms, can be obtained below. By clicking the button, the form will open in a new tab and can be downloaded as a PDF to your computer or mobile device.</p>
+        
+        <div class="service-category">
+            <div class="category-title">1. Industries & Planning Department</div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div>
+                        <h4>Approval of Building Plans</h4>
+                        <p>Application form required for obtaining approval of building plans prior to constructing residential or commercial buildings within the local council area.</p>
+                    </div>
+                    <a href="form-building.html" target="_blank" class="btn-download">Download Application</a>
+                </div>
+                <div class="service-card">
+                    <div>
+                        <h4>Business & Trade Licenses</h4>
+                        <p>Application form for starting a new business or industry, as well as for the annual renewal of trade licenses.</p>
+                    </div>
+                    <a href="form-business.html" target="_blank" class="btn-download">Download Application</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-category">
+            <div class="category-title">2. Administrative, Utility & Training Services</div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div>
+                        <h4>Reservation of Auditoriums and Playgrounds</h4>
+                        <p>Booking form for reserving the new auditorium of the Bingiriya Pradeshiya Sabha or playgrounds owned by the council for public or private events.</p>
+                    </div>
+                    <a href="form-hall.html" target="_blank" class="btn-download">Download Application</a>
+                </div>
+                <div class="service-card">
+                    <div>
+                        <h4>Internship Opportunities</h4>
+                        <p>Application form for university and higher education students seeking industrial or internship training within the IT, Administration, or Accounts branches of the Sabha.</p>
+                    </div>
+                    <a href="form-internship.html" target="_blank" class="btn-download">Download Application</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bingiriya Pradeshiya Sabha. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

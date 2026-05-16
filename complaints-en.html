@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
+    <title>Bingiriya Pradeshiya Sabha - Public Complaints</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+            text-align: center; 
+        }
+        
+        /* =============== Language Bar CSS =============== */
+        .lang-bar {
+            background-color: #f8f9fa;
+            padding: 8px 20px;
+            text-align: right;
+            border-bottom: 1px solid #ddd;
+            font-size: 0.9em;
+        }
+        .lang-bar a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 15px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .lang-bar a:hover {
+            color: #800000;
+        }
+        .lang-bar .active-lang {
+            color: #800000;
+            border-bottom: 2px solid #800000;
+            padding-bottom: 2px;
+        }
+        /* ================================================ */
+        
+        header { 
+            background-color: #800000; 
+            color: white; 
+            padding: 20px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .header-logo { height: 90px; width: auto; }
+        .header-text { text-align: left; }
+        header h1 { margin: 0; font-size: 2.2em; }
+        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; }
+        
+        nav { background-color: #333; padding: 12px; }
+        nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 1.05em; transition: color 0.3s; }
+        nav a:hover { color: #ffcc00; }
+        
+        .container { max-width: 700px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: left; }
+        h2 { color: #800000; text-align: center; margin-top: 0; border-bottom: 2px solid #800000; padding-bottom: 10px; }
+        
+        p.intro { font-size: 1.1em; color: #555; line-height: 1.6; text-align: justify; }
+        
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 8px; color: #333; font-size: 1.05em; }
+        
+        input[type="text"], input[type="email"], input[type="tel"], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 1em;
+            font-family: inherit;
+        }
+        
+        input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
+            border-color: #800000;
+            outline: none;
+            box-shadow: 0 0 5px rgba(128,0,0,0.2);
+        }
+        
+        textarea { resize: vertical; min-height: 120px; }
+        
+        .btn-submit {
+            background-color: #800000;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        .btn-submit:hover { background-color: #333; }
+        
+        footer { background-color: #333; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
+    </style>
+</head>
+<body>
+
+    <div class="lang-bar">
+        <a href="complaints.html">සිංහල</a>
+        <a href="complaints-en.html" class="active-lang">English</a>
+        <a href="complaints-ta.html">தமிழ்</a>
+    </div>
+
+    <header>
+        <img src="logo.jpg" alt="Bingiriya Pradeshiya Sabha Logo" class="header-logo">
+        <div class="header-text">
+            <h1>Bingiriya Pradeshiya Sabha</h1>
+            <p>A Noble Step in Public Service</p>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index-en.html">Home</a>
+        <a href="about-en.html">About Us</a>
+        <a href="services-en.html">Services</a>
+        <a href="complaints-en.html">Complaints</a>
+    </nav>
+
+    <div class="container">
+        <h2>Submission of Public Complaints and Suggestions</h2>
+        <p class="intro">Please fill out and submit the form below to inform the Sabha about any public deficiencies, road infrastructure issues, health, or environmental problems within the Bingiriya Pradeshiya Sabha area, or to share your valuable suggestions.</p>
+        
+        <form action="#" method="post" onsubmit="alert('Your complaint form has been successfully received! (Sample Submit)'); return false;">
+            
+            <div class="form-group">
+                <label for="name">Your Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Type your name here..." required>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="07xxxxxxxx" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email Address (Optional):</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com">
+            </div>
+            
+            <div class="form-group">
+                <label for="category">Complaint/Suggestion Category:</label>
+                <select id="category" name="category" required>
+                    <option value="">-- Select Category --</option>
+                    <option value="roads">Roads and Bridges Maintenance</option>
+                    <option value="garbage">Waste Management and Sanitation</option>
+                    <option value="lamps">Street Lights Repair</option>
+                    <option value="health">Public Health and Dengue Control</option>
+                    <option value="other">Other Public Issues</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Description of Complaint or Suggestion:</label>
+                <textarea id="message" name="message" placeholder="Explain your issue clearly here..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">Submit Complaint</button>
+            
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Bingiriya Pradeshiya Sabha. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
