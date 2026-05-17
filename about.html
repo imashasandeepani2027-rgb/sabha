@@ -5,84 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>බිංගිරිය ප්‍රාදේශීය සභාව - අපි ගැන</title>
     <style>
-        body { 
-            font-family: 'Iskoola Pota', 'Nirmala UI', 'Segoe UI', Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #f4f4f4; 
-            text-align: center; 
-        }
+        body { font-family: 'Iskoola Pota', 'Nirmala UI', 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #e6f2ff; text-align: center; }
+        .lang-bar { background-color: #f8f9fa; padding: 8px 20px; text-align: right; border-bottom: 1px solid #ddd; font-size: 0.9em; }
+        .lang-bar a { color: #333; text-decoration: none; margin-left: 15px; font-weight: bold; transition: color 0.2s; }
+        .lang-bar a:hover { color: #003366; }
+        .lang-bar .active-lang { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 2px; }
         
-        /* =============== Language Bar CSS =============== */
-        .lang-bar {
-            background-color: #f8f9fa;
-            padding: 8px 20px;
-            text-align: right;
-            border-bottom: 1px solid #ddd;
-            font-size: 0.9em;
-        }
-        .lang-bar a {
-            color: #333;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: bold;
-            transition: color 0.2s;
-        }
-        .lang-bar a:hover {
-            color: #800000;
-        }
-        .lang-bar .active-lang {
-            color: #800000;
-            border-bottom: 2px solid #800000;
-            padding-bottom: 2px;
-        }
-        /* ================================================ */
-        
-        header { 
-            background-color: #800000; 
-            color: white; 
-            padding: 20px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
+        header { background-color: #b3d1ff; color: #002244; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; gap: 20px; }
         .header-logo { height: 90px; width: auto; }
         .header-text { text-align: left; }
-        header h1 { margin: 0; font-size: 2.2em; }
-        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; }
+        header h1 { margin: 0; font-size: 2.2em; color: #002244; }
+        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; color: #003366; }
         
-        nav { background-color: #333; padding: 12px; }
+        nav { background-color: #003366; padding: 12px; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 1.05em; transition: color 0.3s; }
         nav a:hover { color: #ffcc00; }
         
-        .container { max-width: 900px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: left; }
-        h2 { color: #800000; text-align: center; margin-top: 0; border-bottom: 2px solid #800000; padding-bottom: 10px; }
+        .container { max-width: 950px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: left; }
+        h2 { color: #003366; text-align: center; margin-top: 0; border-bottom: 2px solid #003366; padding-bottom: 10px; font-size: 1.8em; }
         
-        .section { margin: 25px 0; padding: 15px; background-color: #fff9f9; border-left: 5px solid #800000; border-radius: 4px; }
-        .section h3 { margin-top: 0; color: #333; font-size: 1.3em; }
-        .section p { line-height: 1.8; color: #444; font-size: 1.1em; margin-bottom: 0; text-align: justify; }
+        .section-box { background-color: #f9f9f9; padding: 20px; border-radius: 6px; margin-bottom: 25px; border-left: 5px solid #b30000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .section-box h3 { color: #003366; margin-top: 0; font-size: 1.3em; margin-bottom: 12px; }
+        .section-box p { color: #333; font-size: 1.05em; line-height: 1.7; margin: 0; text-align: justify; }
         
-        .sub-title { font-weight: bold; color: #800000; margin-top: 15px; margin-bottom: 5px; font-size: 1.1em; }
-        .structure-list { list-style-type: square; padding-left: 20px; line-height: 1.8; font-size: 1.1em; color: #444; }
+        .sub-title { color: #b30000; font-weight: bold; margin-top: 15px; margin-bottom: 10px; font-size: 1.1em; }
+        ul { font-size: 1.05em; color: #333; line-height: 1.8; padding-left: 20px; margin: 0; }
+        li { margin-bottom: 8px; }
+        li strong { color: #003366; }
         
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; background-color: white; }
-        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; font-size: 1.05em; }
-        th { background-color: #800000; color: white; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-
-        footer { background-color: #333; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 1.05em; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; line-height: 1.6; }
+        th { background-color: #003366; color: white; font-weight: bold; }
+        tr:hover { background-color: #f1f7ff; }
+        td:first-child { font-weight: bold; color: #003366; width: 25%; }
+        
+        footer { background-color: #002244; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
     </style>
 </head>
 <body>
-
     <div class="lang-bar">
         <a href="about.html" class="active-lang">සිංහල</a>
         <a href="about-en.html">English</a>
         <a href="about-ta.html">தமிழ்</a>
     </div>
-
     <header>
         <img src="logo.jpg" alt="Bingiriya Pradeshiya Sabha Logo" class="header-logo">
         <div class="header-text">
@@ -90,40 +55,38 @@
             <p>මහජන සේවයේ උදාර පියවර</p>
         </div>
     </header>
-
     <nav>
         <a href="index.html">මුල් පිටුව</a>
         <a href="about.html">අපි ගැන</a>
         <a href="services.html">සේවාවන්</a>
         <a href="complaints.html">පැමිණිලි</a>
     </nav>
-
     <div class="container">
         <h2>සභාව පිළිබඳ හැඳින්වීම සහ සංවිධාන ව්‍යුහය</h2>
         
-        <div class="section">
+        <div class="section-box">
             <h3>අපේ දැක්ම (Our Vision)</h3>
             <p>ප්‍රදේශයේ ජනතාවගේ උපරිම සහභාගීත්වය ඇතිව විධිමත් වූත්, තිරසාර වූත් සංවර්ධන ක්‍රියාවලියක් තුළින් බිංගිරිය බල ප්‍රදේශය ශ්‍රී ලංකාවේ ආදර්ශමත් ප්‍රාදේශීය සභා බල ප්‍රදේශය බවට පත් කිරීම.</p>
         </div>
 
-        <div class="section">
+        <div class="section-box">
             <h3>අපේ මෙහෙවර (Our Mission)</h3>
             <p>ප්‍රඥාගෝචර මඟ පෙන්වීම් සහ කාර්යක්ෂම සම්පත් කළමනාකරණය මඟින් පොදු ජන අවශ්‍යතා සපුරාලමින්, ප්‍රදේශයේ සෞඛ්‍ය, මාර්ග සහ පොදු උපයෝගිතා සේවාවන් ඉහළ නැංවීම තුළින් වඩාත් සුරක්ෂිත සහ සුවපහසු ජන ජීවිතයක් උදාකර දීම.</p>
         </div>
 
-        <div class="section">
+        <div class="section-box">
             <h3>පාලන ව්‍යුහය (Governance Structure)</h3>
             <p>බිංගිරිය ප්‍රාදේශීය සභාවේ සමස්ත ක්‍රියාවලිය ප්‍රධාන පාර්ශවයන් දෙකක ඒකාබද්ධ දායකත්වයෙන් මඟ පෙන්වනු ලබයි:</p>
             
             <div class="sub-title">1. දේශපාලන අධිකාරිය (Political Authority)</div>
-            <ul class="structure-list">
+            <ul>
                 <li>ගරු සභාපතිතුමා (සභාවේ ප්‍රධාන විධායක නිලධාරී)</li>
                 <li>ගරු උප සභාපතිතුමා</li>
                 <li>තේරී පත් වූ ගරු මන්ත්‍රී මණ්ඩලය</li>
             </ul>
-
+            
             <div class="sub-title">2. පරිපාලන හා නිලධාරී මණ්ඩලය (Administrative Staff)</div>
-            <ul class="structure-list">
+            <ul>
                 <li><strong>සභා ලේකම්:</strong> සභාවේ ප්‍රධාන පරිපාලන නිලධාරීවරයා වන අතර මූල්‍ය හා කාර්ය මණ්ඩල පාලනය සිදු කරයි.</li>
                 <li><strong>ප්‍රධාන ලිපිකරු:</strong> කාර්යාලීය ලිපිකරු කටයුතු සහ සම්බන්ධීකරණය.</li>
                 <li><strong>කර්මාන්ත නිලධාරී (Technical Officer):</strong> ප්‍රදේශයේ මාර්ග, ගොඩනැගිලි සහ භෞතික සංවර්ධන ව්‍යාපෘති අධීක්ෂණය.</li>
@@ -132,7 +95,7 @@
             </ul>
         </div>
 
-        <div class="section">
+        <div class="section-box" style="border-left: 5px solid #003366;">
             <h3>ප්‍රධාන මෙහෙයුම් අංශ (Main Departments)</h3>
             <p>මහජන අවශ්‍යතා කාර්යක්ෂමව ඉටු කිරීම සඳහා සභාව තුළ ක්‍රියාත්මක වන ප්‍රධාන අංශ මෙන්න:</p>
             
@@ -145,33 +108,29 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><b>පරිපාලන අංශය</b></td>
+                        <td>පරිපාලන අංශය</td>
                         <td>කාර්ය මණ්ඩල පාලනය, ලේඛන කළමනාකරණය සහ පොදු සම්බන්ධීකරණය.</td>
                     </tr>
                     <tr>
-                        <td><b>ගිණුම් අංශය</b></td>
+                        <td>ගිණුම් අංශය</td>
                         <td>අයවැය සකස් කිරීම, ගෙවීම්, ව්‍යාපෘති ප්‍රතිපාදන සහ මූල්‍ය පාලනය.</td>
                     </tr>
                     <tr>
-                        <td><b>ආදායම් අංශය</b></td>
+                        <td>ආදායම් අංශය</td>
                         <td>අක්කර බදු, ව්‍යාපාර බදු, සතිපොළ සහ විනෝදාස්වාද බදු එකතු කිරීම.</td>
                     </tr>
                     <tr>
-                        <td><b>කර්මාන්ත (තාක්ෂණික) අංශය</b></td>
+                        <td>කර්මාන්ත (තාක්ෂණික) අංශය</td>
                         <td>වීදි ලාම්පු නඩත්තුව, මාර්ග කාපට් කිරීම, ගොඩනැගිලි සැලසුම් අනුමත කිරීම.</td>
                     </tr>
                     <tr>
-                        <td><b>සෞඛ්‍ය හා පරිසර අංශය</b></td>
+                        <td>සෞඛ්‍ය හා පරිසර අංශය</td>
                         <td>කසළ කළමනාකරණය, ඩෙංගු මර්දනය, පොදු වෙළඳපොළ පිරිසිදුතාවය පාලනය.</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-
-    <footer>
-        <p>&copy; 2026 බිංගිරිය ප්‍රාදේශීය සභාව. සියලුම හිමිකම් ඇවිරිණි.</p>
-    </footer>
-
+    <footer><p>&copy; 2026 බිංගිරිය ප්‍රාදේශීය සභාව. සියලුම හිමිකම් ඇවිරිණි.</p></footer>
 </body>
 </html>

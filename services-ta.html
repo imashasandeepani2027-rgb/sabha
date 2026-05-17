@@ -4,99 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google" content="notranslate">
-    <title>பிங்கிரிய பிரதேச சபை - சேவைகள்</title>
+    <title>பிங்கிரிய பிரதேச சபை - சேவைகள் மற்றும் பதிவிறக்கங்கள்</title>
     <style>
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #f4f4f4; 
-            text-align: center; 
-        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #e6f2ff; text-align: center; }
+        .lang-bar { background-color: #f8f9fa; padding: 8px 20px; text-align: right; border-bottom: 1px solid #ddd; font-size: 0.9em; }
+        .lang-bar a { color: #333; text-decoration: none; margin-left: 15px; font-weight: bold; transition: color 0.2s; }
+        .lang-bar a:hover { color: #003366; }
+        .lang-bar .active-lang { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 2px; }
         
-        /* =============== Language Bar CSS =============== */
-        .lang-bar {
-            background-color: #f8f9fa;
-            padding: 8px 20px;
-            text-align: right;
-            border-bottom: 1px solid #ddd;
-            font-size: 0.9em;
-        }
-        .lang-bar a {
-            color: #333;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: bold;
-            transition: color 0.2s;
-        }
-        .lang-bar a:hover {
-            color: #800000;
-        }
-        .lang-bar .active-lang {
-            color: #800000;
-            border-bottom: 2px solid #800000;
-            padding-bottom: 2px;
-        }
-        /* ================================================ */
-        
-        header { 
-            background-color: #800000; 
-            color: white; 
-            padding: 20px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
+        header { background-color: #b3d1ff; color: #002244; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; gap: 20px; }
         .header-logo { height: 90px; width: auto; }
         .header-text { text-align: left; }
-        header h1 { margin: 0; font-size: 2.2em; }
-        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; }
+        header h1 { margin: 0; font-size: 2.2em; color: #002244; }
+        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; color: #003366; }
         
-        nav { background-color: #333; padding: 12px; }
+        nav { background-color: #003366; padding: 12px; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 1.05em; transition: color 0.3s; }
         nav a:hover { color: #ffcc00; }
         
-        .container { max-width: 900px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: left; }
-        h2 { color: #800000; text-align: center; margin-top: 0; border-bottom: 2px solid #800000; padding-bottom: 10px; }
+        .container { max-width: 950px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: left; }
+        h2 { color: #003366; text-align: center; margin-top: 0; border-bottom: 2px solid #003366; padding-bottom: 10px; font-size: 1.8em; }
         
-        p.intro { font-size: 1.1em; color: #555; line-height: 1.6; text-align: justify; }
+        .main-intro { font-size: 1.05em; color: #444; line-height: 1.6; margin-bottom: 30px; text-align: justify; }
         
-        .service-category { margin: 25px 0; }
-        .category-title { font-size: 1.3em; color: #800000; font-weight: bold; margin-bottom: 15px; background-color: #fff5f5; padding: 8px; border-left: 4px solid #800000; }
+        .section-title { background-color: #fff2e6; color: #b30000; font-size: 1.3em; font-weight: bold; padding: 10px 15px; margin: 30px 0 20px 0; border-left: 5px solid #b30000; border-radius: 4px; }
         
-        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-        .service-card { background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 6px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); transition: transform 0.2s; display: flex; flex-direction: column; justify-content: space-between; }
-        .service-card:hover { transform: translateY(-3px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        .service-card h4 { margin-top: 0; color: #333; font-size: 1.15em; margin-bottom: 10px; }
-        .service-card p { font-size: 0.95em; color: #666; line-height: 1.6; margin-bottom: 15px; text-align: justify; }
+        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 20px; margin-bottom: 20px; }
+        .card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: flex; flex-direction: column; justify-content: space-between; }
+        .card h4 { color: #003366; margin: 0 0 10px 0; font-size: 1.2em; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+        .card p { color: #666; font-size: 0.98em; line-height: 1.6; margin: 0 0 20px 0; text-align: justify; }
         
-        .btn-download { 
-            display: inline-block; 
-            background-color: #800000; 
-            color: white; 
-            text-decoration: none; 
-            padding: 8px 15px; 
-            font-size: 0.95em; 
-            font-weight: bold; 
-            border-radius: 4px; 
-            text-align: center;
-            transition: background 0.3s; 
-        }
-        .btn-download:hover { background-color: #333; }
+        .btn-download { display: block; background-color: #b30000; color: white; text-align: center; padding: 10px; text-decoration: none; border-radius: 4px; font-weight: bold; font-size: 1em; transition: background 0.2s; }
+        .btn-download:hover { background-color: #ffcc00; color: #002244; }
         
-        footer { background-color: #333; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
+        footer { background-color: #002244; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
     </style>
 </head>
 <body>
-
     <div class="lang-bar">
         <a href="services.html">සිංහල</a>
         <a href="services-en.html">English</a>
         <a href="services-ta.html" class="active-lang">தமிழ்</a>
     </div>
-
     <header>
         <img src="logo.jpg" alt="Bingiriya Pradeshiya Sabha Logo" class="header-logo">
         <div class="header-text">
@@ -104,64 +53,65 @@
             <p>பொதுச் சேவையில் ஒரு உன்னதமான படி</p>
         </div>
     </header>
-
     <nav>
         <a href="index-ta.html">முகப்பு</a>
         <a href="about-ta.html">எங்களைப் பற்றி</a>
         <a href="services-ta.html">சேவைகள்</a>
         <a href="complaints-ta.html">புகார்கள்</a>
     </nav>
-
     <div class="container">
-        <h2>பொதுச் சேவைகள் மற்றும் விண்ணப்பப் படிவப் பதிவிறக்கங்கள்</h2>
-        
-        <p class="intro">பிங்கிரிய உள்ளூர் பகுதிக்குள் வாழும் குடிமக்கள் மற்றும் மாணவர்களுக்காக சபையினால் வழங்கப்படும் முதன்மைச் சேவைகள் மற்றும் அதற்கான உத்தியோகபூர்வ விண்ணப்பப் படிவங்களை கீழே பெற்றுக் கொள்ளலாம். பொத்தானைக் கிளிக் செய்வதன் மூலம், படிவம் புதிய தாவலில் திறக்கப்படும் மற்றும் உங்கள் கணினி அல்லது மொபைலில் PDF ஆக பதிவிறக்கம் செய்யப்படலாம்.</p>
-        
-        <div class="service-category">
-            <div class="category-title">1. தொழில்துறை மற்றும் திட்டமிடல் பிரிவு</div>
-            <div class="service-grid">
-                <div class="service-card">
-                    <div>
-                        <h4>கட்டிடத் திட்டங்களுக்கு அனுமதி வழங்குதல்</h4>
-                        <p>உள்ளூர் சபை எல்லைக்குள் குடியிருப்பு அல்லது வணிகக் கட்டிடங்களை கட்டுவதற்கு முன்னர் கட்டிடத் திட்டங்களுக்கான அனுமதியைப் பெறுவதற்குத் தேவையான விண்ணப்பப் படிவம்.</p>
-                    </div>
-                    <a href="form-building.html" target="_blank" class="btn-download">விண்ணப்பத்தைப் பதிவிறக்கவும்</a>
-                </div>
-                <div class="service-card">
-                    <div>
-                        <h4>வர்த்தக மற்றும் வியாபார உரிமங்கள்</h4>
-                        <p>புதிய வியாபாரம் அல்லது தொழிலைத் தொடங்குவதற்கும், வர்த்தக உரிமங்களை வருடாந்தம் புதுப்பிப்பதற்குமான விண்ணப்பப் படிவம்.</p>
-                    </div>
-                    <a href="form-business.html" target="_blank" class="btn-download">விண்ணப்பத்தைப் பதிவிறக்கவும்</a>
-                </div>
+        <h2>பொதுச் சேவைகள் மற்றும் விண்ணப்பப் பதிவிறக்கங்கள்</h2>
+        <p class="main-intro">
+            பிங்கிரிய பிரதேச சபை எல்லைக்குட்பட்ட பொதுமக்களுக்கும் மாணவர்களுக்கும் சபையினால் வழங்கப்படும் பிரதான சேவைகளை கீழே பெற்றுக்கொள்ளலாம். பட்டனை கிளிக் செய்வதன் மூலம், நீங்கள் படிவத்தை ஒரு புதிய ট্যাப்பில் திறந்து உங்கள் கணினி அல்லது மொபைல் போனில் PDF ஆக பதிவிறக்கம் செய்யலாம்.
+        </p>
+
+        <div class="section-title">1. கைத்தொழில் மற்றும் திட்டமிடல் பிரிவு</div>
+        <div class="grid-container">
+            <div class="card">
+                <h4>கட்டிட வரைபட அனுமதி</h4>
+                <p>பிரதேசத்தினுள் குடியிருப்பு அல்லது வணிகக் கட்டிடங்களை நிர்மாணிப்பதற்கு முன்னர் வரைபட அனுமதி பெறுவதற்கான விண்ணப்பப் படிவம்.</p>
+                <a href="building_plan.pdf" class="btn-download" target="_blank">விண்ணப்பத்தை பதிவிறக்கவும்</a>
+            </div>
+            <div class="card">
+                <h4>வர்த்தக மற்றும் வியாபார உரிமங்கள்</h4>
+                <p>புதிய வியாபாரம் அல்லது கைத்தொழில் ஒன்றை ஆரம்பிப்பதற்கும், வர்த்தக உரிமங்களை ஆண்டுதோறும் புதுப்பிப்பதற்கும் உரிய விண்ணப்பப் படிவம்.</p>
+                <a href="trade_license.pdf" class="btn-download" target="_blank">விண்ணப்பத்தை பதிவிறக்கவும்</a>
             </div>
         </div>
 
-        <div class="service-category">
-            <div class="category-title">2. நிர்வாக, பயன்பாட்டு மற்றும் பயிற்சிச் சேவைகள்</div>
-            <div class="service-grid">
-                <div class="service-card">
-                    <div>
-                        <h4>மண்டபங்கள் மற்றும் விளையாட்டு மைதானங்களை முன்பதிவு செய்தல்</h4>
-                        <p>பிங்கிரிய பிரதேச சபையின் புதிய மண்டபம் அல்லது சபைக்குச் சொந்தமான விளையாட்டு மைதானங்களை பொது அல்லது தனியார் நிகழ்வுகளுக்காக முன்பதிவு செய்வதற்கான படிவம்.</p>
-                    </div>
-                    <a href="form-hall.html" target="_blank" class="btn-download">விண்ணப்பத்தைப் பதிவிறக்கவும்</a>
-                </div>
-                <div class="service-card">
-                    <div>
-                        <h4>ஊழியர் பயிற்சி வாய்ப்புகள் (Internships)</h4>
-                        <p>பல்கலைக்கழகம் மற்றும் உயர்கல்வி நிறுவன மாணவர்களுக்கான சபையின் தகவல் தொழில்நுட்பம் (IT), நிர்வாகம் அல்லது கணக்குப் பிரிவுகளில் தொழில்துறைப் பயிற்சிகளைப் பெறுவதற்கான விண்ணப்பப் படிவம்.</p>
-                    </div>
-                    <a href="form-internship.html" target="_blank" class="btn-download">விண்ணப்பத்தைப் பதிவிறக்கவும்</a>
-                </div>
+        <div class="section-title">2. நிர்வாக, பயன்பாட்டு மற்றும் பயிற்சி சேவைகள்</div>
+        <div class="grid-container">
+            <div class="card">
+                <h4>அரங்கு மற்றும் விளையாட்டு மைதான முன்பதிவு</h4>
+                <p>சபைக்குச் சொந்தமான புதிய அரங்கு அல்லது விளையாட்டு மைதானங்களை விழாக்கள் மற்றும் பல்வேறு தேவைகளுக்காக ஒதுக்கீடு செய்வதற்கான படிவம்.</p>
+                <a href="hall_booking.pdf" class="btn-download" target="_blank">விண்ணப்பத்தை பதிவிறக்கவும்</a>
+            </div>
+            <div class="card">
+                <h4>சீர்மைவாசிக பயிற்சி வாய்ப்புகள் (Internships)</h4>
+                <p>பல்கலைக்கழக மற்றும் உயர்கல்வி நிறுவன மாணவர்களுக்காக சபையின் தகவல் தொழில்நுட்பம் (IT), நிர்வாகம் அல்லது தொழில்நுட்ப பிரிவுகளில் வழங்கப்படும் பயிற்சி வாய்ப்புகளுக்கான விண்ணப்பம்.</p>
+                <a href="internship_application.pdf" class="btn-download" target="_blank">விண்ணப்பத்தை பதிவிறக்கவும்</a>
+            </div>
+        </div>
+
+        <div class="section-title">3. சுகாதாரம் மற்றும் சுற்றாடல் பிரிவு</div>
+        <div class="grid-container">
+            <div class="card">
+                <h4>சுற்றாடல் உரிம விண்ணப்பம்</h4>
+                <p>பிரதேசத்தினுள் சுற்றாடல் இணக்கமான முறையில் கைத்தொழில்கள் அல்லது வியாபாரங்களை நடத்துவதற்குத் தேவையான சுற்றாடல் பாதுகாப்பு உரிமங்களைப் பெறுவதற்கான படிவம்.</p>
+                <a href="environment_form.pdf" class="btn-download" target="_blank">விண்ணப்பத்தை பதிவிறக்கவும்</a>
+            </div>
+        </div>
+
+        <div class="section-title">4. நிதி மற்றும் கணக்குப் பிரிவு</div>
+        <div class="grid-container">
+            <div class="card">
+                <h4>டெண்டர் மற்றும் ஏல விண்ணப்பங்கள்</h4>
+                <p>சபையினால் நடத்தப்படும் பல்வேறு ஏலங்கள் மற்றும் டெண்டர் கொள்முதல் செயல்முறைகளில் பங்கேற்கும் தரப்பினருக்கான உத்தியோகபூர்வ படிவம்.</p>
+                <a href="tender_application.pdf" class="btn-download" target="_blank">விண்ணப்பத்தை பதிவிறக்கவும்</a>
             </div>
         </div>
 
     </div>
-
-    <footer>
-        <p>&copy; 2026 பிங்கிரிய பிரதேச சபை. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
-    </footer>
-
+    <footer><p>&copy; 2026 பிங்கிரிய பிரதேச சபை. அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p></footer>
 </body>
 </html>

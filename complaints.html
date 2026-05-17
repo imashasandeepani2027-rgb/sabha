@@ -9,7 +9,7 @@
             font-family: 'Iskoola Pota', 'Nirmala UI', 'Segoe UI', Arial, sans-serif; 
             margin: 0; 
             padding: 0; 
-            background-color: #f4f4f4; 
+            background-color: #e6f2ff; /* ලා නිල් පාට (Light Blue Background) */
             text-align: center; 
         }
         
@@ -29,18 +29,17 @@
             transition: color 0.2s;
         }
         .lang-bar a:hover {
-            color: #800000;
+            color: #003366;
         }
         .lang-bar .active-lang {
-            color: #800000;
-            border-bottom: 2px solid #800000;
+            color: #003366;
+            border-bottom: 2px solid #003366;
             padding-bottom: 2px;
         }
-        /* ================================================ */
         
         header { 
-            background-color: #800000; 
-            color: white; 
+            background-color: #b3d1ff; /* Header එක සඳහා ගැලපෙන නිල් පාටක් */
+            color: #002244; /* තද නිල් පාට අකුරු */
             padding: 20px; 
             box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
             display: flex;
@@ -50,15 +49,15 @@
         }
         .header-logo { height: 90px; width: auto; }
         .header-text { text-align: left; }
-        header h1 { margin: 0; font-size: 2.2em; }
-        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; }
+        header h1 { margin: 0; font-size: 2.2em; color: #002244; }
+        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; color: #003366; }
         
-        nav { background-color: #333; padding: 12px; }
+        nav { background-color: #003366; padding: 12px; } /* තද නිල් පාට Navigation */
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 1.05em; transition: color 0.3s; }
         nav a:hover { color: #ffcc00; }
         
         .container { max-width: 700px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: left; }
-        h2 { color: #800000; text-align: center; margin-top: 0; border-bottom: 2px solid #800000; padding-bottom: 10px; }
+        h2 { color: #003366; text-align: center; margin-top: 0; border-bottom: 2px solid #003366; padding-bottom: 10px; }
         
         p.intro { font-size: 1.1em; color: #555; line-height: 1.6; text-align: justify; }
         
@@ -76,15 +75,15 @@
         }
         
         input[type="text"]:focus, input[type="email"]:focus, select:focus, textarea:focus {
-            border-color: #800000;
+            border-color: #003366;
             outline: none;
-            box-shadow: 0 0 5px rgba(128,0,0,0.2);
+            box-shadow: 0 0 5px rgba(0,51,102,0.2);
         }
         
         textarea { resize: vertical; min-height: 120px; }
         
         .btn-submit {
-            background-color: #800000;
+            background-color: #003366; /* නිල් පාට Submit Button එක */
             color: white;
             padding: 14px 20px;
             border: none;
@@ -97,7 +96,7 @@
         }
         .btn-submit:hover { background-color: #333; }
         
-        footer { background-color: #333; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
+        footer { background-color: #002244; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
     </style>
 </head>
 <body>
@@ -125,7 +124,7 @@
 
     <div class="container">
         <h2>මහජන පැමිණිලි සහ යෝජනා ඉදිරිපත් කිරීම</h2>
-        <p class="intro">බිංගිරිය ප්‍රාදේශීය සභා බල ප්‍රදේශය තුළ පවතින පොදු අඩුපාඩු, මාර්ග ගැටලු, සෞඛ්‍ය හෝ පරිසර ගැටලු පිළිබඳව සභාව දැනුවත් කිරීමට සහ ඔබේ යෝජනා ඉදිරිපත් කිරීමට පහත පෝරමය (Form) නිවැරදිව පුරවා එවන්න.</p>
+        <p class="intro">බිංගිරිය ප්‍රාදේශීය සභා බල ප්‍රදේශය තුළ පවතින පොදු අඩුපාඩු, මාර්ග ගැටලු, සෞඛ්‍ය හෝ පරිසර ගැටලු පිළිබඳව සභාව දැනුවත් කිරීමට සහ ඔබේ යෝජනා ඉදිරිපත් කිරීමට පහත පෝරමය නිවැරදිව පුරවා එවන්න.</p>
         
         <form action="#" method="post" onsubmit="alert('ඔබේ පැමිණිලි පෝරමය සාර්ථකව ලැබුණා! (Sample Submit)'); return false;">
             

@@ -6,84 +6,49 @@
     <meta name="google" content="notranslate">
     <title>Bingiriya Pradeshiya Sabha - About Us</title>
     <style>
-        body { 
-            font-family: 'Segoe UI', Arial, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #f4f4f4; 
-            text-align: center; 
-        }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #e6f2ff; text-align: center; }
+        .lang-bar { background-color: #f8f9fa; padding: 8px 20px; text-align: right; border-bottom: 1px solid #ddd; font-size: 0.9em; }
+        .lang-bar a { color: #333; text-decoration: none; margin-left: 15px; font-weight: bold; transition: color 0.2s; }
+        .lang-bar a:hover { color: #003366; }
+        .lang-bar .active-lang { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 2px; }
         
-        /* =============== Language Bar CSS =============== */
-        .lang-bar {
-            background-color: #f8f9fa;
-            padding: 8px 20px;
-            text-align: right;
-            border-bottom: 1px solid #ddd;
-            font-size: 0.9em;
-        }
-        .lang-bar a {
-            color: #333;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: bold;
-            transition: color 0.2s;
-        }
-        .lang-bar a:hover {
-            color: #800000;
-        }
-        .lang-bar .active-lang {
-            color: #800000;
-            border-bottom: 2px solid #800000;
-            padding-bottom: 2px;
-        }
-        /* ================================================ */
-        
-        header { 
-            background-color: #800000; 
-            color: white; 
-            padding: 20px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
+        header { background-color: #b3d1ff; color: #002244; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; gap: 20px; }
         .header-logo { height: 90px; width: auto; }
         .header-text { text-align: left; }
-        header h1 { margin: 0; font-size: 2.2em; }
-        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; }
+        header h1 { margin: 0; font-size: 2.2em; color: #002244; }
+        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; color: #003366; }
         
-        nav { background-color: #333; padding: 12px; }
+        nav { background-color: #003366; padding: 12px; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 1.05em; transition: color 0.3s; }
         nav a:hover { color: #ffcc00; }
         
-        .container { max-width: 900px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: left; }
-        h2 { color: #800000; text-align: center; margin-top: 0; border-bottom: 2px solid #800000; padding-bottom: 10px; }
+        .container { max-width: 950px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: left; }
+        h2 { color: #003366; text-align: center; margin-top: 0; border-bottom: 2px solid #003366; padding-bottom: 10px; font-size: 1.8em; }
         
-        .section { margin: 25px 0; padding: 15px; background-color: #fff9f9; border-left: 5px solid #800000; border-radius: 4px; }
-        .section h3 { margin-top: 0; color: #333; font-size: 1.3em; }
-        .section p { line-height: 1.8; color: #444; font-size: 1.1em; margin-bottom: 0; text-align: justify; }
+        .section-box { background-color: #f9f9f9; padding: 20px; border-radius: 6px; margin-bottom: 25px; border-left: 5px solid #b30000; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .section-box h3 { color: #003366; margin-top: 0; font-size: 1.3em; margin-bottom: 12px; }
+        .section-box p { color: #333; font-size: 1.05em; line-height: 1.7; margin: 0; text-align: justify; }
         
-        .sub-title { font-weight: bold; color: #800000; margin-top: 15px; margin-bottom: 5px; font-size: 1.1em; }
-        .structure-list { list-style-type: square; padding-left: 20px; line-height: 1.8; font-size: 1.1em; color: #444; }
+        .sub-title { color: #b30000; font-weight: bold; margin-top: 15px; margin-bottom: 10px; font-size: 1.1em; }
+        ul { font-size: 1.05em; color: #333; line-height: 1.8; padding-left: 20px; margin: 0; }
+        li { margin-bottom: 8px; }
+        li strong { color: #003366; }
         
-        table { width: 100%; border-collapse: collapse; margin-top: 15px; background-color: white; }
-        th, td { padding: 12px; border: 1px solid #ddd; text-align: left; font-size: 1.05em; }
-        th { background-color: #800000; color: white; }
-        tr:nth-child(even) { background-color: #f9f9f9; }
-
-        footer { background-color: #333; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
+        table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 1.05em; }
+        th, td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; line-height: 1.6; }
+        th { background-color: #003366; color: white; font-weight: bold; }
+        tr:hover { background-color: #f1f7ff; }
+        td:first-child { font-weight: bold; color: #003366; width: 25%; }
+        
+        footer { background-color: #002244; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
     </style>
 </head>
 <body>
-
     <div class="lang-bar">
         <a href="about.html">සිංහල</a>
         <a href="about-en.html" class="active-lang">English</a>
         <a href="about-ta.html">தமிழ்</a>
     </div>
-
     <header>
         <img src="logo.jpg" alt="Bingiriya Pradeshiya Sabha Logo" class="header-logo">
         <div class="header-text">
@@ -91,51 +56,49 @@
             <p>A Noble Step in Public Service</p>
         </div>
     </header>
-
     <nav>
         <a href="index-en.html">Home</a>
         <a href="about-en.html">About Us</a>
         <a href="services-en.html">Services</a>
         <a href="complaints-en.html">Complaints</a>
     </nav>
-
     <div class="container">
-        <h2>Introduction and Organizational Structure of the Sabha</h2>
+        <h2>Introduction and Governance Structure of the Sabha</h2>
         
-        <div class="section">
+        <div class="section-box">
             <h3>Our Vision</h3>
-            <p>To make the Bingiriya area an exemplary Pradeshiya Sabha region in Sri Lanka through a systematic and sustainable development process with the maximum participation of the local community.</p>
+            <p>To make the Bingiriya Pradeshiya Sabha area an exemplary local government authority area in Sri Lanka through a systematic and sustainable development process with the maximum participation of the local community.</p>
         </div>
 
-        <div class="section">
+        <div class="section-box">
             <h3>Our Mission</h3>
-            <p>To ensure a safer and more comfortable life for the public by meeting their common needs through wise guidance and efficient resource management, while upgrading local health, roads, and public utility services.</p>
+            <p>To ensure a safer and more comfortable life for the public by fulfilling their needs through prudent guidance and efficient resource management, while upgrading health, road, and common utility services in the area.</p>
         </div>
 
-        <div class="section">
+        <div class="section-box">
             <h3>Governance Structure</h3>
-            <p>The overall operations of the Bingiriya Pradeshiya Sabha are guided by the combined contribution of two main authorities:</p>
+            <p>The entire operation of the Bingiriya Pradeshiya Sabha is guided by the combined contribution of two main bodies:</p>
             
             <div class="sub-title">1. Political Authority</div>
-            <ul class="structure-list">
+            <ul>
                 <li>Hon. Chairman (Chief Executive Officer of the Sabha)</li>
                 <li>Hon. Vice Chairman</li>
-                <li>Hon. Elected Members of the Council</li>
+                <li>The Elected Council of Members</li>
             </ul>
-
+            
             <div class="sub-title">2. Administrative Staff</div>
-            <ul class="structure-list">
-                <li><strong>Secretary of the Sabha:</strong> The chief administrative officer of the Sabha who oversees financial and staff management.</li>
-                <li><strong>Chief Clerk:</strong> Handles office clerical works and overall coordination.</li>
-                <li><strong>Technical Officer:</strong> Supervises roads, buildings, and physical infrastructure development projects in the area.</li>
-                <li><strong>Revenue Inspectors:</strong> Manages trade licenses, shop rentals, and local council tax revenues.</li>
-                <li><strong>Public Health Inspector (PHI):</strong> Controls public health, sanitation, and food safety within the local area.</li>
+            <ul>
+                <li><strong>Secretary of the Sabha:</strong> The chief administrative officer of the council, managing financial and staff affairs.</li>
+                <li><strong>Chief Clerk:</strong> Handles office clerical duties and coordination.</li>
+                <li><strong>Technical Officer:</strong> Supervises roads, buildings, and physical development projects in the area.</li>
+                <li><strong>Revenue Inspectors:</strong> Manages business licenses, shop rents, and council tax revenues.</li>
+                <li><strong>Public Health Inspector (PHI):</strong> Controls health, sanitation, and food safety in the area.</li>
             </ul>
         </div>
 
-        <div class="section">
+        <div class="section-box" style="border-left: 5px solid #003366;">
             <h3>Main Departments</h3>
-            <p>Here are the key operational branches functioning within the Sabha to deliver efficient public services:</p>
+            <p>Here are the key departments operating within the council to fulfill public needs efficiently:</p>
             
             <table>
                 <thead>
@@ -146,33 +109,29 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><b>Administration Department</b></td>
-                        <td>Staff control, document management, and general coordination.</td>
+                        <td>Administrative Department</td>
+                        <td>Staff management, document control, and general coordination.</td>
                     </tr>
                     <tr>
-                        <td><b>Accounts Department</b></td>
-                        <td>Budget preparation, payments, project funding, and financial control.</td>
+                        <td>Accounts Department</td>
+                        <td>Budgeting, payments, project allocations, and financial control.</td>
                     </tr>
                     <tr>
-                        <td><b>Revenue Department</b></td>
-                        <td>Collection of acreage taxes, business taxes, weekly fair rentals, and entertainment taxes.</td>
+                        <td>Revenue Department</td>
+                        <td>Collection of acreage taxes, business taxes, fair rents, and entertainment taxes.</td>
                     </tr>
                     <tr>
-                        <td><b>Industrial (Technical) Department</b></td>
-                        <td>Maintenance of street lights, road carpeting, and approval of building plans.</td>
+                        <td>Technical Department</td>
+                        <td>Street lamp maintenance, road carpeting, and building plan approvals.</td>
                     </tr>
                     <tr>
-                        <td><b>Health & Environment Department</b></td>
-                        <td>Waste management, dengue eradication campaigns, and monitoring public market sanitation.</td>
+                        <td>Health & Environment Department</td>
+                        <td>Waste management, dengue eradication, and public market sanitation control.</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-
-    <footer>
-        <p>&copy; 2026 Bingiriya Pradeshiya Sabha. All Rights Reserved.</p>
-    </footer>
-
+    <footer><p>&copy; 2026 Bingiriya Pradeshiya Sabha. All Rights Reserved.</p></footer>
 </body>
 </html>

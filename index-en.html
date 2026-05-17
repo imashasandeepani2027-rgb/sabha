@@ -1,71 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="notranslate">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
     <title>Bingiriya Pradeshiya Sabha - Home</title>
     <style>
-        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; text-align: center; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; background-color: #e6f2ff; text-align: center; }
+        .lang-bar { background-color: #f8f9fa; padding: 8px 20px; text-align: right; border-bottom: 1px solid #ddd; font-size: 0.9em; }
+        .lang-bar a { color: #333; text-decoration: none; margin-left: 15px; font-weight: bold; transition: color 0.2s; }
+        .lang-bar a:hover { color: #003366; }
+        .lang-bar .active-lang { color: #003366; border-bottom: 2px solid #003366; padding-bottom: 2px; }
         
-        /* =============== Language Bar CSS =============== */
-        .lang-bar {
-            background-color: #f8f9fa;
-            padding: 8px 20px;
-            text-align: right;
-            border-bottom: 1px solid #ddd;
-            font-size: 0.9em;
-        }
-        .lang-bar a {
-            color: #333;
-            text-decoration: none;
-            margin-left: 15px;
-            font-weight: bold;
-            transition: color 0.2s;
-        }
-        .lang-bar a:hover {
-            color: #800000;
-        }
-        .lang-bar .active-lang {
-            color: #800000;
-            border-bottom: 2px solid #800000;
-            padding-bottom: 2px;
-        }
-        /* ================================================ */
-
-        header { 
-            background-color: #800000; 
-            color: white; 
-            padding: 20px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 20px;
-        }
+        header { background-color: #b3d1ff; color: #002244; padding: 20px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: center; gap: 20px; }
         .header-logo { height: 90px; width: auto; }
         .header-text { text-align: left; }
-        header h1 { margin: 0; font-size: 2.2em; }
-        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; }
+        header h1 { margin: 0; font-size: 2.2em; color: #002244; }
+        header p { margin: 5px 0 0 0; font-size: 1.1em; opacity: 0.9; color: #003366; }
         
-        nav { background-color: #333; padding: 12px; }
+        nav { background-color: #003366; padding: 12px; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; font-size: 1.05em; transition: color 0.3s; }
         nav a:hover { color: #ffcc00; }
         
-        .container { max-width: 900px; margin: 30px auto; background-color: white; padding: 30px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; }
-        h2 { color: #333; margin-top: 0; }
-        .hero-image { width: 100%; max-width: 800px; height: auto; border-radius: 6px; box-shadow: 0px 5px 12px rgba(0,0,0,0.15); margin: 20px 0; }
-        .description { text-align: justify; line-height: 1.7; color: #444; font-size: 1.1em; margin-top: 20px; }
-        footer { background-color: #333; color: white; padding: 15px; margin-top: 40px; font-size: 0.95em; }
+        .container { max-width: 950px; margin: 30px auto; background-color: white; padding: 35px; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); border-radius: 8px; text-align: center; }
+        
+        .welcome-title { color: #003366; font-size: 1.8em; font-weight: bold; margin-top: 0; margin-bottom: 25px; border-bottom: 2px solid #b3d1ff; padding-bottom: 15px; }
+        
+        .main-img-container { width: 100%; margin-bottom: 25px; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 10px rgba(0,0,0,0.15); }
+        .main-img { width: 100%; height: auto; display: block; }
+        
+        .welcome-text { font-size: 1.15em; color: #222; line-height: 1.8; text-align: justify; margin: 0; padding: 5px 10px; }
+        
+        footer { background-color: #002244; color: white; padding: 15px; margin-top: 40px; text-align: center; font-size: 0.95em; }
     </style>
 </head>
 <body>
-
     <div class="lang-bar">
         <a href="index.html">සිංහල</a>
         <a href="index-en.html" class="active-lang">English</a>
         <a href="index-ta.html">தமிழ்</a>
     </div>
-
     <header>
         <img src="logo.jpg" alt="Bingiriya Pradeshiya Sabha Logo" class="header-logo">
         <div class="header-text">
@@ -73,25 +47,23 @@
             <p>A Noble Step in Public Service</p>
         </div>
     </header>
-
     <nav>
         <a href="index-en.html">Home</a>
         <a href="about-en.html">About Us</a>
         <a href="services-en.html">Services</a>
         <a href="complaints-en.html">Complaints</a>
     </nav>
-
     <div class="container">
-        <h2>Welcome to the Official Website of Bingiriya Pradeshiya Sabha</h2>
-        <img src="sabha.jpg" alt="Bingiriya Pradeshiya Sabha New Building" class="hero-image">
-        <p class="description">
-            Our primary objective is to ensure the welfare of the public by improving common amenities, public health, developing local roads, and maintaining proper administration within the Bingiriya Pradeshiya Sabha area. Through this digital platform, information regarding various services, development projects, and official announcements implemented by the Sabha will be brought closer to the citizens with high transparency.
+        <div class="welcome-title">Welcome to the Official Website of Bingiriya Pradeshiya Sabha</div>
+        
+        <div class="main-img-container">
+            <img src="sabha.jpg" alt="Bingiriya Pradeshiya Sabha Building" class="main-img">
+        </div>
+        
+        <p class="welcome-text">
+            Our main objective is to ensure the well-being of the people living in the Bingiriya Pradeshiya area by improving public infrastructure, ensuring health and sanitation, developing common roads, and maintaining systematic local governance. Information regarding various services, development projects, and official notifications issued by the council is brought closer to the public with complete transparency through this digital system.
         </p>
     </div>
-
-    <footer>
-        <p>&copy; 2026 Bingiriya Pradeshiya Sabha. All Rights Reserved.</p>
-    </footer>
-
+    <footer><p>&copy; 2026 Bingiriya Pradeshiya Sabha. All Rights Reserved.</p></footer>
 </body>
 </html>
